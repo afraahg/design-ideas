@@ -1,37 +1,25 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  max-width: 100%;
+  width: 100vw;
   height: 100vh;
+}
+body .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
-}
-
-img {
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
-.container {
   width: 100vw;
   height: 100vh;
-  position: relative;
 }
-
-.red {
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: all 0.1s ease;
-}
-
-.red:hover {
+body .container .black {
+  max-width: 100vw;
+  height: 100vh;
+  transition: opacity 0.3s;
   opacity: 1;
+}
+body .container .black:hover {
+  filter: invert(16%) sepia(77%) saturate(5125%) hue-rotate(12deg) brightness(77%) contrast(132%);
 }/*# sourceMappingURL=main.css.map */
